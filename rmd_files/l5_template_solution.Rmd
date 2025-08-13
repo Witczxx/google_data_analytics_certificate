@@ -1,0 +1,25 @@
+---
+title: "l5_template"
+author: "Patrick"
+date: "2025-08-02"
+output:
+  word_document: default
+  html_document: default
+  pdf_document: default
+---
+
+## Setting up my environment
+
+Notes: Setting up my R environment by loading the 'tidyverse' and 'palmer penguins' packages
+
+```{r loading packages}
+library(tidyverse)
+library(palmerpenguins)
+```
+
+Illustrating a plot works, too!
+
+```{r}
+ggplot(data=penguins,aes(x=flipper_length_mm,y=body_mass_g))+
+  geom_point(color="purple")
+```

@@ -1,0 +1,394 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0710.1712                               -->
+<workbook original-version='18.1' source-build='2025.2.1 (20252.25.0710.1712)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='CO2 Data Cleaned (co2_dataset_3)' inline='true' name='federated.1txik4q1u73o731g0vp050wkeg05' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='co2_dataset_3' name='excel-direct.1n2w7gp1re4cwo120zwm20es8r79'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/patrick/files/data_analytics/xlsx_files/co2_dataset_3.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1n2w7gp1re4cwo120zwm20es8r79' name='CO2 Data Cleaned' table='[&apos;CO2 Data Cleaned$&apos;]' type='table'>
+          <columns gridOrigin='A1:F10001:no:A1:F10001:0' header='yes' outcome='2'>
+            <column datatype='string' name='Country Code' ordinal='0' />
+            <column datatype='string' name='Country Name' ordinal='1' />
+            <column datatype='string' name='Region' ordinal='2' />
+            <column datatype='integer' name='Year' ordinal='3' />
+            <column datatype='real' name='CO2 (kt)' ordinal='4' />
+            <column datatype='real' name='CO2 Per Capita (metric tons)' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[CO2 Data Cleaned]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F10001:no:A1:F10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country Code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country Code]</local-name>
+            <parent-name>[CO2 Data Cleaned]</parent-name>
+            <remote-alias>Country Code</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[CO2 Data Cleaned_795C49400F1442F4BAA64F637E0A4C4A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country Name]</local-name>
+            <parent-name>[CO2 Data Cleaned]</parent-name>
+            <remote-alias>Country Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[CO2 Data Cleaned_795C49400F1442F4BAA64F637E0A4C4A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[CO2 Data Cleaned]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[CO2 Data Cleaned_795C49400F1442F4BAA64F637E0A4C4A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[CO2 Data Cleaned]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[CO2 Data Cleaned_795C49400F1442F4BAA64F637E0A4C4A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO2 (kt)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO2 (kt)]</local-name>
+            <parent-name>[CO2 Data Cleaned]</parent-name>
+            <remote-alias>CO2 (kt)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[CO2 Data Cleaned_795C49400F1442F4BAA64F637E0A4C4A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO2 Per Capita (metric tons)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO2 Per Capita (metric tons)]</local-name>
+            <parent-name>[CO2 Data Cleaned]</parent-name>
+            <remote-alias>CO2 Per Capita (metric tons)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[CO2 Data Cleaned_795C49400F1442F4BAA64F637E0A4C4A]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Country Code]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Country Name]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='CO2 Data Cleaned' datatype='table' name='[__tableau_internal_object_id__].[CO2 Data Cleaned_795C49400F1442F4BAA64F637E0A4C4A]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='CO2 Data Cleaned' id='CO2 Data Cleaned_795C49400F1442F4BAA64F637E0A4C4A'>
+            <properties context=''>
+              <relation connection='excel-direct.1n2w7gp1re4cwo120zwm20es8r79' name='CO2 Data Cleaned' table='[&apos;CO2 Data Cleaned$&apos;]' type='table'>
+                <columns gridOrigin='A1:F10001:no:A1:F10001:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Country Code' ordinal='0' />
+                  <column datatype='string' name='Country Name' ordinal='1' />
+                  <column datatype='string' name='Region' ordinal='2' />
+                  <column datatype='integer' name='Year' ordinal='3' />
+                  <column datatype='real' name='CO2 (kt)' ordinal='4' />
+                  <column datatype='real' name='CO2 Per Capita (metric tons)' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='CO2 Data Cleaned (co2_dataset_3)' name='federated.1txik4q1u73o731g0vp050wkeg05' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1txik4q1u73o731g0vp050wkeg05'>
+            <column datatype='real' name='[CO2 (kt)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CO2 (kt)]' derivation='Sum' name='[sum:CO2 (kt):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1txik4q1u73o731g0vp050wkeg05].[none:Region:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1txik4q1u73o731g0vp050wkeg05].[sum:CO2 (kt):qk]</rows>
+        <cols>[federated.1txik4q1u73o731g0vp050wkeg05].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{4D529DE0-5240-43D3-A13C-ADF7143770FB}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1txik4q1u73o731g0vp050wkeg05].[none:Region:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1txik4q1u73o731g0vp050wkeg05].[none:Region:nk]</field>
+            <field>[federated.1txik4q1u73o731g0vp050wkeg05].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E0CD2ECC-F340-4128-98E6-1901BA62D4D0}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      wZjQCwAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
